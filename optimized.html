@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0">
+  <title>Critical Rendering Path Demo (Optimized)</title>
+  <!-- Inline critical CSS -->
+  <style>
+    /* Critical CSS that's needed for above-the-fold content */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+      line-height: 1.6;
+      color: #333;
+      background-color: #f5f5f5;
+    }
+
+    .container {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 2rem;
+    }
+
+    header {
+      text-align: center;
+      margin-bottom: 3rem;
+    }
+
+    h1 {
+      font-size: 2.5rem;
+      color: #2c3e50;
+      margin-bottom: 1rem;
+    }
+
+    .subtitle {
+      font-size: 1.2rem;
+      color: #666;
+    }
+
+    .content {
+      margin-bottom: 3rem;
+    }
+
+    .card {
+      background: white;
+      border-radius: 8px;
+      padding: 1.5rem;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+      margin: 1rem 0;
+    }
+  </style>
+  <!-- Load non-critical CSS asynchronously -->
+  <link rel="preload" href="styles.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+  <noscript>
+    <link rel="stylesheet" href="styles.css">
+  </noscript>
+</head>
+
+<body>
+  <div class="container">
+    <header>
+      <h1>Critical Rendering Path Demo (Optimized)</h1>
+      <p class="subtitle">Demonstrating optimized page load with proper CRP</p>
+    </header>
+
+    <main>
+      <section class="content">
+        <h2>Above the Fold Content</h2>
+        <p>This content should be visible immediately when the page loads.</p>
+        <div class="card">
+          <h3>Important Information</h3>
+          <p>This is critical content that users need to see right away.</p>
+        </div>
+      </section>
+
+      <section class="content">
+        <h2>Below the Fold Content</h2>
+        <p>This content can load after the initial render.</p>
+        <div class="card">
+          <h3>Additional Information</h3>
+          <p>This content is less critical and can be loaded later.</p>
+        </div>
+      </section>
+    </main>
+  </div>
+</body>
+
+</html>

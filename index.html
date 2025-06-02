@@ -19,13 +19,40 @@
   were on a desktop screen, causing users to need to zoom and pan -->
   <meta name="viewport" content="width=device-width,initial-scale=1.0">
   <!-- Title -->
-  <title>Vanilla JS App</title>
+  <title>Critical Rendering Path Demo</title>
+  <!-- This large stylesheet will block rendering -->
+  <link rel="stylesheet" href="styles.css">
 </head>
+<!-- "Above the fold" content refers to the portion of a webpage that is visible to users 
+ without having to scroll down. The term comes from the newspaper industry, 
+ where the most important content was placed above the physical fold of the newspaper. -->
 
 <body>
-  <div id="app">
-    <h1>Welcome to My Vanilla JS App</h1>
-    <p>This is a simple application built with vanilla JavaScript.</p>
+  <div class="container">
+    <header>
+      <h1>Critical Rendering Path Demo</h1>
+      <p class="subtitle">Demonstrating how large stylesheets affect page load</p>
+    </header>
+
+    <main>
+      <section class="content">
+        <h2>Above the Fold Content</h2>
+        <p>This content should be visible immediately when the page loads.</p>
+        <div class="card">
+          <h3>Important Information</h3>
+          <p>This is critical content that users need to see right away.</p>
+        </div>
+      </section>
+
+      <section class="content">
+        <h2>Below the Fold Content</h2>
+        <p>This content can load after the initial render.</p>
+        <div class="card">
+          <h3>Additional Information</h3>
+          <p>This content is less critical and can be loaded later.</p>
+        </div>
+      </section>
+    </main>
   </div>
 </body>
 

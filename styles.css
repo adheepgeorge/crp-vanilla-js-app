@@ -1,0 +1,1338 @@
+/* Base styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, sans-serif;
+  line-height: 1.6;
+  color: #333;
+  background-color: #f5f5f5;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+header {
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+h1 {
+  font-size: 2.5rem;
+  color: #2c3e50;
+  margin-bottom: 1rem;
+}
+
+.subtitle {
+  font-size: 1.2rem;
+  color: #666;
+}
+
+.content {
+  margin-bottom: 3rem;
+}
+
+.card {
+  background: white;
+  border-radius: 8px;
+  padding: 1.5rem;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  margin: 1rem 0;
+}
+
+/* Generate a large number of unused styles to simulate a large stylesheet */
+/* These styles will never be used but will make the stylesheet larger */
+.unused-1 {
+  color: #000;
+}
+.unused-2 {
+  color: #111;
+}
+.unused-3 {
+  color: #222;
+}
+.unused-4 {
+  color: #333;
+}
+.unused-5 {
+  color: #444;
+}
+.unused-6 {
+  color: #555;
+}
+.unused-7 {
+  color: #666;
+}
+.unused-8 {
+  color: #777;
+}
+.unused-9 {
+  color: #888;
+}
+.unused-10 {
+  color: #999;
+}
+/* ... and so on for many more unused styles ... */
+
+/* Add more unused styles to make the file larger */
+@media (min-width: 768px) {
+  .unused-1 {
+    color: #000;
+  }
+  .unused-2 {
+    color: #111;
+  }
+  .unused-3 {
+    color: #222;
+  }
+  /* ... more unused styles ... */
+}
+
+@media (min-width: 1024px) {
+  .unused-1 {
+    color: #000;
+  }
+  .unused-2 {
+    color: #111;
+  }
+  .unused-3 {
+    color: #222;
+  }
+  /* ... more unused styles ... */
+}
+
+/* Add many more media queries with unused styles */
+@media (min-width: 1200px) {
+  .unused-1 {
+    color: #000;
+  }
+  .unused-2 {
+    color: #111;
+  }
+  .unused-3 {
+    color: #222;
+  }
+  /* ... more unused styles ... */
+}
+
+/* Add more unused styles with different selectors */
+[data-theme="dark"] .unused-1 {
+  color: #fff;
+}
+[data-theme="dark"] .unused-2 {
+  color: #eee;
+}
+[data-theme="dark"] .unused-3 {
+  color: #ddd;
+}
+/* ... more unused styles ... */
+
+/* Add more unused styles with pseudo-classes */
+.unused-1:hover {
+  color: #000;
+}
+.unused-2:hover {
+  color: #111;
+}
+.unused-3:hover {
+  color: #222;
+}
+/* ... more unused styles ... */
+
+/* Add more unused styles with pseudo-elements */
+.unused-1::before {
+  content: "";
+}
+.unused-2::before {
+  content: "";
+}
+.unused-3::before {
+  content: "";
+}
+/* ... more unused styles ... */
+
+/* Add complex nested selectors */
+.card:hover .card-title {
+  transform: scale(1.05);
+  transition: transform 0.3s ease;
+}
+
+.card:hover .card-content {
+  opacity: 0.8;
+  transition: opacity 0.3s ease;
+}
+
+/* Add more unused styles with complex selectors */
+.unused-1:hover .unused-2 {
+  color: #000;
+  background: linear-gradient(to right, #000, #fff);
+}
+
+.unused-2:hover .unused-3 {
+  color: #111;
+  background: linear-gradient(to left, #111, #eee);
+}
+
+/* Add more media queries with complex styles */
+@media (min-width: 768px) and (max-width: 1024px) {
+  .unused-1 {
+    color: #000;
+    background: linear-gradient(45deg, #000, #fff);
+    transform: rotate(5deg);
+    transition: all 0.3s ease;
+  }
+
+  .unused-2 {
+    color: #111;
+    background: linear-gradient(-45deg, #111, #eee);
+    transform: rotate(-5deg);
+    transition: all 0.3s ease;
+  }
+}
+
+/* Add more complex animations */
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes fade {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 0.5;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+/* Add more unused styles with animations */
+.unused-1 {
+  animation: spin 2s linear infinite;
+}
+
+.unused-2 {
+  animation: fade 3s ease-in-out infinite;
+}
+
+/* Add more complex selectors with pseudo-elements */
+.unused-1::before,
+.unused-1::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(45deg, #000, #fff);
+  opacity: 0.5;
+  transition: all 0.3s ease;
+}
+
+/* Add more unused styles with complex transforms */
+.unused-2 {
+  transform: perspective(1000px) rotateX(45deg) rotateY(45deg);
+  transition: transform 0.5s ease;
+}
+
+/* Add more unused styles with complex filters */
+.unused-3 {
+  filter: blur(5px) brightness(1.2) contrast(1.5);
+  transition: filter 0.3s ease;
+}
+
+/* Add more unused styles with complex backgrounds */
+.unused-4 {
+  background: linear-gradient(45deg, #000, #fff),
+    radial-gradient(circle, #000, #fff),
+    repeating-linear-gradient(45deg, #000, #fff 10px);
+  background-blend-mode: multiply, screen, overlay;
+}
+
+/* Add more unused styles with complex box-shadows */
+.unused-5 {
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5), 0 0 20px rgba(0, 0, 0, 0.3),
+    0 0 30px rgba(0, 0, 0, 0.1);
+}
+
+/* Add more unused styles with complex text effects */
+.unused-6 {
+  text-shadow: 2px 2px 0 #000, 4px 4px 0 #111, 6px 6px 0 #222;
+}
+
+/* Add more unused styles with complex borders */
+.unused-7 {
+  border: 2px solid #000, 4px solid #111, 6px solid #222;
+  border-radius: 10px;
+}
+
+/* Add more unused styles with complex transitions */
+.unused-8 {
+  transition: all 0.3s ease, transform 0.5s ease, opacity 0.7s ease,
+    background 0.9s ease;
+}
+
+/* Add more unused styles with complex transforms */
+.unused-9 {
+  transform: translateX(10px) translateY(20px) rotate(45deg) scale(1.2)
+    skew(10deg);
+}
+
+/* Add more unused styles with complex backgrounds */
+.unused-10 {
+  background: linear-gradient(45deg, #000, #fff),
+    url("data:image/svg+xml,<svg>...</svg>"),
+    radial-gradient(circle, #000, #fff);
+  background-size: 100% 100%, 50% 50%, 200% 200%;
+  background-position: center, top left, bottom right;
+  background-repeat: no-repeat, repeat, repeat-x;
+}
+
+/* Add more unused styles with complex animations */
+@keyframes complex {
+  0% {
+    transform: translateX(0) rotate(0);
+    opacity: 1;
+    background: #000;
+  }
+  25% {
+    transform: translateX(100px) rotate(90deg);
+    opacity: 0.5;
+    background: #333;
+  }
+  50% {
+    transform: translateX(0) rotate(180deg);
+    opacity: 1;
+    background: #666;
+  }
+  75% {
+    transform: translateX(-100px) rotate(270deg);
+    opacity: 0.5;
+    background: #999;
+  }
+  100% {
+    transform: translateX(0) rotate(360deg);
+    opacity: 1;
+    background: #fff;
+  }
+}
+
+.unused-11 {
+  animation: complex 5s ease-in-out infinite;
+}
+
+/* Add more unused styles with complex selectors and pseudo-classes */
+.unused-12:hover:active:focus {
+  color: #000;
+  background: #fff;
+  transform: scale(1.2);
+  transition: all 0.3s ease;
+}
+
+/* Add more unused styles with complex media queries */
+@media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+  .unused-13 {
+    color: #000;
+    background: #fff;
+    transform: rotate(45deg);
+    transition: all 0.3s ease;
+  }
+}
+
+/* Add more unused styles with complex attribute selectors */
+[data-theme="dark"][data-size="large"][data-variant="primary"] {
+  color: #fff;
+  background: #000;
+  padding: 2rem;
+  margin: 1rem;
+  border-radius: 10px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+}
+
+/* Add more unused styles with complex combinators */
+.unused-14 > .unused-15 + .unused-16 ~ .unused-17 {
+  color: #000;
+  background: #fff;
+  padding: 1rem;
+  margin: 0.5rem;
+  border: 1px solid #ccc;
+}
+
+/* Add more unused styles with complex pseudo-elements */
+.unused-18::before,
+.unused-18::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(45deg, #000, #fff);
+  opacity: 0.5;
+  transition: all 0.3s ease;
+  transform: rotate(45deg);
+  filter: blur(5px);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+/* Add more unused styles with complex transforms and transitions */
+.unused-19 {
+  transform: perspective(1000px) rotateX(45deg) rotateY(45deg) rotateZ(45deg)
+    translateZ(100px) scale(1.2) skew(10deg, 20deg);
+  transition: transform 0.5s ease, opacity 0.3s ease, background 0.7s ease,
+    box-shadow 0.9s ease;
+}
+
+/* Add more unused styles with complex backgrounds and filters */
+.unused-20 {
+  background: linear-gradient(45deg, #000, #fff),
+    radial-gradient(circle, #000, #fff),
+    repeating-linear-gradient(45deg, #000, #fff 10px);
+  background-blend-mode: multiply, screen, overlay;
+  filter: blur(5px) brightness(1.2) contrast(1.5) grayscale(0.5)
+    hue-rotate(45deg) invert(0.2) opacity(0.8) saturate(1.5) sepia(0.3);
+}
+
+/* Generate thousands of unused styles with different patterns */
+/* Pattern 1: Complex gradients with different angles */
+.unused-gradient-1 {
+  background: linear-gradient(0deg, #000, #fff);
+}
+.unused-gradient-2 {
+  background: linear-gradient(1deg, #000, #fff);
+}
+.unused-gradient-3 {
+  background: linear-gradient(2deg, #000, #fff);
+}
+.unused-gradient-4 {
+  background: linear-gradient(3deg, #000, #fff);
+}
+.unused-gradient-5 {
+  background: linear-gradient(4deg, #000, #fff);
+}
+/* ... continue for all 360 degrees ... */
+
+/* Pattern 2: Complex transforms with different values */
+.unused-transform-1 {
+  transform: rotate(1deg) scale(1.1);
+}
+.unused-transform-2 {
+  transform: rotate(2deg) scale(1.2);
+}
+.unused-transform-3 {
+  transform: rotate(3deg) scale(1.3);
+}
+.unused-transform-4 {
+  transform: rotate(4deg) scale(1.4);
+}
+.unused-transform-5 {
+  transform: rotate(5deg) scale(1.5);
+}
+/* ... continue for more combinations ... */
+
+/* Pattern 3: Complex box-shadows with different values */
+.unused-shadow-1 {
+  box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.1);
+}
+.unused-shadow-2 {
+  box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.2);
+}
+.unused-shadow-3 {
+  box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.3);
+}
+.unused-shadow-4 {
+  box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.4);
+}
+.unused-shadow-5 {
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
+}
+/* ... continue for more combinations ... */
+
+/* Pattern 4: Complex filters with different values */
+.unused-filter-1 {
+  filter: blur(1px) brightness(1.1);
+}
+.unused-filter-2 {
+  filter: blur(2px) brightness(1.2);
+}
+.unused-filter-3 {
+  filter: blur(3px) brightness(1.3);
+}
+.unused-filter-4 {
+  filter: blur(4px) brightness(1.4);
+}
+.unused-filter-5 {
+  filter: blur(5px) brightness(1.5);
+}
+/* ... continue for more combinations ... */
+
+/* Pattern 5: Complex animations with different durations */
+@keyframes unused-anim-1 {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(10px);
+  }
+}
+@keyframes unused-anim-2 {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(20px);
+  }
+}
+@keyframes unused-anim-3 {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(30px);
+  }
+}
+/* ... continue for more animations ... */
+
+/* Pattern 6: Complex media queries with different breakpoints */
+@media (min-width: 100px) {
+  .unused-mq-1 {
+    color: #000;
+  }
+}
+@media (min-width: 200px) {
+  .unused-mq-2 {
+    color: #111;
+  }
+}
+@media (min-width: 300px) {
+  .unused-mq-3 {
+    color: #222;
+  }
+}
+@media (min-width: 400px) {
+  .unused-mq-4 {
+    color: #333;
+  }
+}
+@media (min-width: 500px) {
+  .unused-mq-5 {
+    color: #444;
+  }
+}
+/* ... continue for more breakpoints ... */
+
+/* Pattern 7: Complex pseudo-elements with different content */
+.unused-pseudo-1::before {
+  content: "1";
+}
+.unused-pseudo-2::before {
+  content: "2";
+}
+.unused-pseudo-3::before {
+  content: "3";
+}
+.unused-pseudo-4::before {
+  content: "4";
+}
+.unused-pseudo-5::before {
+  content: "5";
+}
+/* ... continue for more content ... */
+
+/* Pattern 8: Complex transitions with different timings */
+.unused-transition-1 {
+  transition: all 0.1s ease;
+}
+.unused-transition-2 {
+  transition: all 0.2s ease;
+}
+.unused-transition-3 {
+  transition: all 0.3s ease;
+}
+.unused-transition-4 {
+  transition: all 0.4s ease;
+}
+.unused-transition-5 {
+  transition: all 0.5s ease;
+}
+/* ... continue for more timings ... */
+
+/* Pattern 9: Complex backgrounds with different positions */
+.unused-bg-1 {
+  background-position: 0% 0%;
+}
+.unused-bg-2 {
+  background-position: 10% 10%;
+}
+.unused-bg-3 {
+  background-position: 20% 20%;
+}
+.unused-bg-4 {
+  background-position: 30% 30%;
+}
+.unused-bg-5 {
+  background-position: 40% 40%;
+}
+/* ... continue for more positions ... */
+
+/* Pattern 10: Complex text effects with different values */
+.unused-text-1 {
+  text-shadow: 1px 1px 1px #000;
+}
+.unused-text-2 {
+  text-shadow: 2px 2px 2px #111;
+}
+.unused-text-3 {
+  text-shadow: 3px 3px 3px #222;
+}
+.unused-text-4 {
+  text-shadow: 4px 4px 4px #333;
+}
+.unused-text-5 {
+  text-shadow: 5px 5px 5px #444;
+}
+/* ... continue for more effects ... */
+
+/* Pattern 11: Complex borders with different styles */
+.unused-border-1 {
+  border: 1px solid #000;
+}
+.unused-border-2 {
+  border: 2px solid #111;
+}
+.unused-border-3 {
+  border: 3px solid #222;
+}
+.unused-border-4 {
+  border: 4px solid #333;
+}
+.unused-border-5 {
+  border: 5px solid #444;
+}
+/* ... continue for more styles ... */
+
+/* Pattern 12: Complex flexbox properties */
+.unused-flex-1 {
+  flex: 1 1 0%;
+}
+.unused-flex-2 {
+  flex: 1 2 0%;
+}
+.unused-flex-3 {
+  flex: 1 3 0%;
+}
+.unused-flex-4 {
+  flex: 1 4 0%;
+}
+.unused-flex-5 {
+  flex: 1 5 0%;
+}
+/* ... continue for more combinations ... */
+
+/* Pattern 13: Complex grid properties */
+.unused-grid-1 {
+  grid-template-columns: repeat(1, 1fr);
+}
+.unused-grid-2 {
+  grid-template-columns: repeat(2, 1fr);
+}
+.unused-grid-3 {
+  grid-template-columns: repeat(3, 1fr);
+}
+.unused-grid-4 {
+  grid-template-columns: repeat(4, 1fr);
+}
+.unused-grid-5 {
+  grid-template-columns: repeat(5, 1fr);
+}
+/* ... continue for more combinations ... */
+
+/* Pattern 14: Complex color combinations */
+.unused-color-1 {
+  color: rgb(0, 0, 0);
+}
+.unused-color-2 {
+  color: rgb(10, 10, 10);
+}
+.unused-color-3 {
+  color: rgb(20, 20, 20);
+}
+.unused-color-4 {
+  color: rgb(30, 30, 30);
+}
+.unused-color-5 {
+  color: rgb(40, 40, 40);
+}
+/* ... continue for more colors ... */
+
+/* Pattern 15: Complex margin/padding combinations */
+.unused-spacing-1 {
+  margin: 1px;
+  padding: 1px;
+}
+.unused-spacing-2 {
+  margin: 2px;
+  padding: 2px;
+}
+.unused-spacing-3 {
+  margin: 3px;
+  padding: 3px;
+}
+.unused-spacing-4 {
+  margin: 4px;
+  padding: 4px;
+}
+.unused-spacing-5 {
+  margin: 5px;
+  padding: 5px;
+}
+/* ... continue for more combinations ... */
+
+/* Pattern 16: Complex font combinations */
+.unused-font-1 {
+  font-size: 1px;
+  line-height: 1;
+}
+.unused-font-2 {
+  font-size: 2px;
+  line-height: 1.2;
+}
+.unused-font-3 {
+  font-size: 3px;
+  line-height: 1.4;
+}
+.unused-font-4 {
+  font-size: 4px;
+  line-height: 1.6;
+}
+.unused-font-5 {
+  font-size: 5px;
+  line-height: 1.8;
+}
+/* ... continue for more combinations ... */
+
+/* Pattern 17: Complex opacity combinations */
+.unused-opacity-1 {
+  opacity: 0.1;
+}
+.unused-opacity-2 {
+  opacity: 0.2;
+}
+.unused-opacity-3 {
+  opacity: 0.3;
+}
+.unused-opacity-4 {
+  opacity: 0.4;
+}
+.unused-opacity-5 {
+  opacity: 0.5;
+}
+/* ... continue for more values ... */
+
+/* Pattern 18: Complex z-index combinations */
+.unused-z-1 {
+  z-index: 1;
+}
+.unused-z-2 {
+  z-index: 2;
+}
+.unused-z-3 {
+  z-index: 3;
+}
+.unused-z-4 {
+  z-index: 4;
+}
+.unused-z-5 {
+  z-index: 5;
+}
+/* ... continue for more values ... */
+
+/* Pattern 19: Complex position combinations */
+.unused-position-1 {
+  position: relative;
+  top: 1px;
+}
+.unused-position-2 {
+  position: relative;
+  top: 2px;
+}
+.unused-position-3 {
+  position: relative;
+  top: 3px;
+}
+.unused-position-4 {
+  position: relative;
+  top: 4px;
+}
+.unused-position-5 {
+  position: relative;
+  top: 5px;
+}
+/* ... continue for more combinations ... */
+
+/* Pattern 20: Complex display combinations */
+.unused-display-1 {
+  display: block;
+}
+.unused-display-2 {
+  display: inline;
+}
+.unused-display-3 {
+  display: inline-block;
+}
+.unused-display-4 {
+  display: flex;
+}
+.unused-display-5 {
+  display: grid;
+}
+/* ... continue for more combinations ... */
+
+/* Pattern 21: Complex overflow combinations */
+.unused-overflow-1 {
+  overflow: hidden;
+}
+.unused-overflow-2 {
+  overflow: auto;
+}
+.unused-overflow-3 {
+  overflow: scroll;
+}
+.unused-overflow-4 {
+  overflow: visible;
+}
+.unused-overflow-5 {
+  overflow: clip;
+}
+/* ... continue for more combinations ... */
+
+/* Pattern 22: Complex visibility combinations */
+.unused-visibility-1 {
+  visibility: visible;
+}
+.unused-visibility-2 {
+  visibility: hidden;
+}
+.unused-visibility-3 {
+  visibility: collapse;
+}
+.unused-visibility-4 {
+  visibility: initial;
+}
+.unused-visibility-5 {
+  visibility: inherit;
+}
+/* ... continue for more combinations ... */
+
+/* Pattern 23: Complex cursor combinations */
+.unused-cursor-1 {
+  cursor: pointer;
+}
+.unused-cursor-2 {
+  cursor: default;
+}
+.unused-cursor-3 {
+  cursor: move;
+}
+.unused-cursor-4 {
+  cursor: text;
+}
+.unused-cursor-5 {
+  cursor: wait;
+}
+/* ... continue for more combinations ... */
+
+/* Pattern 24: Complex pointer-events combinations */
+.unused-pointer-1 {
+  pointer-events: auto;
+}
+.unused-pointer-2 {
+  pointer-events: none;
+}
+.unused-pointer-3 {
+  pointer-events: all;
+}
+.unused-pointer-4 {
+  pointer-events: visible;
+}
+.unused-pointer-5 {
+  pointer-events: visiblePainted;
+}
+/* ... continue for more combinations ... */
+
+/* Pattern 25: Complex user-select combinations */
+.unused-select-1 {
+  user-select: none;
+}
+.unused-select-2 {
+  user-select: auto;
+}
+.unused-select-3 {
+  user-select: text;
+}
+.unused-select-4 {
+  user-select: contain;
+}
+.unused-select-5 {
+  user-select: all;
+}
+/* ... continue for more combinations ... */
+
+/* Pattern 26: Complex white-space combinations */
+.unused-whitespace-1 {
+  white-space: normal;
+}
+.unused-whitespace-2 {
+  white-space: nowrap;
+}
+.unused-whitespace-3 {
+  white-space: pre;
+}
+.unused-whitespace-4 {
+  white-space: pre-wrap;
+}
+.unused-whitespace-5 {
+  white-space: pre-line;
+}
+/* ... continue for more combinations ... */
+
+/* Pattern 27: Complex word-break combinations */
+.unused-wordbreak-1 {
+  word-break: normal;
+}
+.unused-wordbreak-2 {
+  word-break: break-all;
+}
+.unused-wordbreak-3 {
+  word-break: keep-all;
+}
+.unused-wordbreak-4 {
+  word-break: break-word;
+}
+.unused-wordbreak-5 {
+  word-break: break-spaces;
+}
+/* ... continue for more combinations ... */
+
+/* Pattern 28: Complex text-align combinations */
+.unused-textalign-1 {
+  text-align: left;
+}
+.unused-textalign-2 {
+  text-align: right;
+}
+.unused-textalign-3 {
+  text-align: center;
+}
+.unused-textalign-4 {
+  text-align: justify;
+}
+.unused-textalign-5 {
+  text-align: start;
+}
+/* ... continue for more combinations ... */
+
+/* Pattern 29: Complex text-decoration combinations */
+.unused-textdecoration-1 {
+  text-decoration: none;
+}
+.unused-textdecoration-2 {
+  text-decoration: underline;
+}
+.unused-textdecoration-3 {
+  text-decoration: overline;
+}
+.unused-textdecoration-4 {
+  text-decoration: line-through;
+}
+.unused-textdecoration-5 {
+  text-decoration: blink;
+}
+/* ... continue for more combinations ... */
+
+/* Pattern 30: Complex text-transform combinations */
+.unused-texttransform-1 {
+  text-transform: none;
+}
+.unused-texttransform-2 {
+  text-transform: capitalize;
+}
+.unused-texttransform-3 {
+  text-transform: uppercase;
+}
+.unused-texttransform-4 {
+  text-transform: lowercase;
+}
+.unused-texttransform-5 {
+  text-transform: full-width;
+}
+/* ... continue for more combinations ... */
+
+/* Pattern 31: Complex background-size combinations */
+.unused-bgsize-1 {
+  background-size: 100% 100%;
+}
+.unused-bgsize-2 {
+  background-size: 200% 200%;
+}
+.unused-bgsize-3 {
+  background-size: 300% 300%;
+}
+.unused-bgsize-4 {
+  background-size: 400% 400%;
+}
+.unused-bgsize-5 {
+  background-size: 500% 500%;
+}
+/* ... continue for more combinations ... */
+
+/* Pattern 32: Complex background-repeat combinations */
+.unused-bgrepeat-1 {
+  background-repeat: no-repeat;
+}
+.unused-bgrepeat-2 {
+  background-repeat: repeat;
+}
+.unused-bgrepeat-3 {
+  background-repeat: repeat-x;
+}
+.unused-bgrepeat-4 {
+  background-repeat: repeat-y;
+}
+.unused-bgrepeat-5 {
+  background-repeat: space;
+}
+/* ... continue for more combinations ... */
+
+/* Pattern 33: Complex background-attachment combinations */
+.unused-bgattach-1 {
+  background-attachment: scroll;
+}
+.unused-bgattach-2 {
+  background-attachment: fixed;
+}
+.unused-bgattach-3 {
+  background-attachment: local;
+}
+.unused-bgattach-4 {
+  background-attachment: initial;
+}
+.unused-bgattach-5 {
+  background-attachment: inherit;
+}
+/* ... continue for more combinations ... */
+
+/* Pattern 34: Complex background-clip combinations */
+.unused-bgclip-1 {
+  background-clip: border-box;
+}
+.unused-bgclip-2 {
+  background-clip: padding-box;
+}
+.unused-bgclip-3 {
+  background-clip: content-box;
+}
+.unused-bgclip-4 {
+  background-clip: text;
+}
+.unused-bgclip-5 {
+  background-clip: initial;
+}
+/* ... continue for more combinations ... */
+
+/* Pattern 35: Complex background-origin combinations */
+.unused-bgorigin-1 {
+  background-origin: border-box;
+}
+.unused-bgorigin-2 {
+  background-origin: padding-box;
+}
+.unused-bgorigin-3 {
+  background-origin: content-box;
+}
+.unused-bgorigin-4 {
+  background-origin: initial;
+}
+.unused-bgorigin-5 {
+  background-origin: inherit;
+}
+/* ... continue for more combinations ... */
+
+/* Pattern 36: Complex background-blend-mode combinations */
+.unused-bgblend-1 {
+  background-blend-mode: normal;
+}
+.unused-bgblend-2 {
+  background-blend-mode: multiply;
+}
+.unused-bgblend-3 {
+  background-blend-mode: screen;
+}
+.unused-bgblend-4 {
+  background-blend-mode: overlay;
+}
+.unused-bgblend-5 {
+  background-blend-mode: darken;
+}
+/* ... continue for more combinations ... */
+
+/* Pattern 37: Complex mix-blend-mode combinations */
+.unused-mixblend-1 {
+  mix-blend-mode: normal;
+}
+.unused-mixblend-2 {
+  mix-blend-mode: multiply;
+}
+.unused-mixblend-3 {
+  mix-blend-mode: screen;
+}
+.unused-mixblend-4 {
+  mix-blend-mode: overlay;
+}
+.unused-mixblend-5 {
+  mix-blend-mode: darken;
+}
+/* ... continue for more combinations ... */
+
+/* Pattern 38: Complex isolation combinations */
+.unused-isolation-1 {
+  isolation: auto;
+}
+.unused-isolation-2 {
+  isolation: isolate;
+}
+.unused-isolation-3 {
+  isolation: initial;
+}
+.unused-isolation-4 {
+  isolation: inherit;
+}
+.unused-isolation-5 {
+  isolation: unset;
+}
+/* ... continue for more combinations ... */
+
+/* Pattern 39: Complex object-fit combinations */
+.unused-objectfit-1 {
+  object-fit: fill;
+}
+.unused-objectfit-2 {
+  object-fit: contain;
+}
+.unused-objectfit-3 {
+  object-fit: cover;
+}
+.unused-objectfit-4 {
+  object-fit: none;
+}
+.unused-objectfit-5 {
+  object-fit: scale-down;
+}
+/* ... continue for more combinations ... */
+
+/* Pattern 40: Complex object-position combinations */
+.unused-objectpos-1 {
+  object-position: center;
+}
+.unused-objectpos-2 {
+  object-position: top;
+}
+.unused-objectpos-3 {
+  object-position: bottom;
+}
+.unused-objectpos-4 {
+  object-position: left;
+}
+.unused-objectpos-5 {
+  object-position: right;
+}
+/* ... continue for more combinations ... */
+
+/* Pattern 41: Complex perspective combinations */
+.unused-perspective-1 {
+  perspective: 100px;
+}
+.unused-perspective-2 {
+  perspective: 200px;
+}
+.unused-perspective-3 {
+  perspective: 300px;
+}
+.unused-perspective-4 {
+  perspective: 400px;
+}
+.unused-perspective-5 {
+  perspective: 500px;
+}
+/* ... continue for more combinations ... */
+
+/* Pattern 42: Complex perspective-origin combinations */
+.unused-perspectiveorigin-1 {
+  perspective-origin: center;
+}
+.unused-perspectiveorigin-2 {
+  perspective-origin: top;
+}
+.unused-perspectiveorigin-3 {
+  perspective-origin: bottom;
+}
+.unused-perspectiveorigin-4 {
+  perspective-origin: left;
+}
+.unused-perspectiveorigin-5 {
+  perspective-origin: right;
+}
+/* ... continue for more combinations ... */
+
+/* Pattern 43: Complex backface-visibility combinations */
+.unused-backface-1 {
+  backface-visibility: visible;
+}
+.unused-backface-2 {
+  backface-visibility: hidden;
+}
+.unused-backface-3 {
+  backface-visibility: initial;
+}
+.unused-backface-4 {
+  backface-visibility: inherit;
+}
+.unused-backface-5 {
+  backface-visibility: unset;
+}
+/* ... continue for more combinations ... */
+
+/* Pattern 44: Complex transform-style combinations */
+.unused-transformstyle-1 {
+  transform-style: flat;
+}
+.unused-transformstyle-2 {
+  transform-style: preserve-3d;
+}
+.unused-transformstyle-3 {
+  transform-style: initial;
+}
+.unused-transformstyle-4 {
+  transform-style: inherit;
+}
+.unused-transformstyle-5 {
+  transform-style: unset;
+}
+/* ... continue for more combinations ... */
+
+/* Pattern 45: Complex transform-origin combinations */
+.unused-transformorigin-1 {
+  transform-origin: center;
+}
+.unused-transformorigin-2 {
+  transform-origin: top;
+}
+.unused-transformorigin-3 {
+  transform-origin: bottom;
+}
+.unused-transformorigin-4 {
+  transform-origin: left;
+}
+.unused-transformorigin-5 {
+  transform-origin: right;
+}
+/* ... continue for more combinations ... */
+
+/* Pattern 46: Complex transition-property combinations */
+.unused-transitionprop-1 {
+  transition-property: none;
+}
+.unused-transitionprop-2 {
+  transition-property: all;
+}
+.unused-transitionprop-3 {
+  transition-property: color;
+}
+.unused-transitionprop-4 {
+  transition-property: background;
+}
+.unused-transitionprop-5 {
+  transition-property: transform;
+}
+/* ... continue for more combinations ... */
+
+/* Pattern 47: Complex transition-duration combinations */
+.unused-transitiondur-1 {
+  transition-duration: 0s;
+}
+.unused-transitiondur-2 {
+  transition-duration: 0.1s;
+}
+.unused-transitiondur-3 {
+  transition-duration: 0.2s;
+}
+.unused-transitiondur-4 {
+  transition-duration: 0.3s;
+}
+.unused-transitiondur-5 {
+  transition-duration: 0.4s;
+}
+/* ... continue for more combinations ... */
+
+/* Pattern 48: Complex transition-timing-function combinations */
+.unused-transitiontiming-1 {
+  transition-timing-function: ease;
+}
+.unused-transitiontiming-2 {
+  transition-timing-function: linear;
+}
+.unused-transitiontiming-3 {
+  transition-timing-function: ease-in;
+}
+.unused-transitiontiming-4 {
+  transition-timing-function: ease-out;
+}
+.unused-transitiontiming-5 {
+  transition-timing-function: ease-in-out;
+}
+/* ... continue for more combinations ... */
+
+/* Pattern 49: Complex transition-delay combinations */
+.unused-transitiondelay-1 {
+  transition-delay: 0s;
+}
+.unused-transitiondelay-2 {
+  transition-delay: 0.1s;
+}
+.unused-transitiondelay-3 {
+  transition-delay: 0.2s;
+}
+.unused-transitiondelay-4 {
+  transition-delay: 0.3s;
+}
+.unused-transitiondelay-5 {
+  transition-delay: 0.4s;
+}
+/* ... continue for more combinations ... */
+
+/* Pattern 50: Complex animation-name combinations */
+.unused-animationname-1 {
+  animation-name: none;
+}
+.unused-animationname-2 {
+  animation-name: fade;
+}
+.unused-animationname-3 {
+  animation-name: slide;
+}
+.unused-animationname-4 {
+  animation-name: rotate;
+}
+.unused-animationname-5 {
+  animation-name: scale;
+}
+/* ... continue for more combinations ... */
