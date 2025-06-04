@@ -1,31 +1,32 @@
 # Critical Rendering Path (CRP)
 
-### Lets start with a simple example - Branch: example-1-inline-critical-css
+## Resources
 
-Demonstration of how a large stylesheet can impact the Critical Rendering Path (CRP) and affect page load performance. Let's create a simple example that will clearly show this effect.
+https://web.dev/learn/performance/understanding-the-critical-path
+https://hpbn.co/primer-on-web-performance/#hypertext-web-pages-and-web-applications
+https://www.freecodecamp.org/news/an-introduction-to-web-performance-and-the-critical-rendering-path-ce1fb5029494/
+https://developer.chrome.com/docs/devtools/performance/selector-stats
 
-First, let me check what files we currently have in the workspace.
+<!-- TODO: write code  -->
 
-Ran tool
-Let me check the current content of the index.html file to see what we're working with.
+![Critical Rendering Path Overview](images/slide1.png)
 
-Read file: index.html
-I'll help you create a demonstration that shows how a large stylesheet can block the Critical Rendering Path. We'll create two scenarios:
+![Critical Rendering Path Overview](images/slide2.png)
+
+![Critical Rendering Path Overview](images/slide3.png)
+
+![Critical Rendering Path Overview](images/slide4.png)
+
+![Critical Rendering Path Overview](images/slide5.png)
+
+### Lets try out a simple example - Branch: example-1-inline-critical-css
 
 1. A page with a large stylesheet that blocks rendering
 2. A page with the same stylesheet but optimized for CRP
 
-Let's create the necessary files:
-
-Now, let's create a large stylesheet that will demonstrate the blocking behavior:
-
-Now, let's create an optimized version of the page that demonstrates how to improve the Critical Rendering Path:
-
-I've created a demonstration that shows how large stylesheets can affect the Critical Rendering Path. Here's what I've set up:
-
-1. `index.html` - The unoptimized version that loads a large stylesheet synchronously
-2. `styles.css` - A large stylesheet with many unused rules to simulate a real-world scenario
-3. `optimized.html` - An optimized version that demonstrates better CRP practices
+3. `index.html` - The unoptimized version that loads a large stylesheet synchronously
+4. `styles.css` - A large stylesheet with many unused rules to simulate a real-world scenario
+5. `optimized.html` - An optimized version that demonstrates better CRP practices
 
 To demonstrate the difference:
 
