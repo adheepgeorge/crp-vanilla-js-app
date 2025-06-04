@@ -56,6 +56,13 @@
     }
   </style>
   <!-- Load non-critical CSS asynchronously -->
+  <!-- Normal CSS loading:
+  HTML → Download CSS → Parse CSS → Render Page
+  (Blocks rendering)
+
+  Async CSS loading:
+  HTML → Download CSS (in parallel) → Parse CSS → Apply CSS
+  (Doesn't block rendering) -->
   <link rel="preload" href="styles.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
   <noscript>
     <link rel="stylesheet" href="styles.css">
