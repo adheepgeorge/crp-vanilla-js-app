@@ -7,8 +7,6 @@ https://hpbn.co/primer-on-web-performance/#hypertext-web-pages-and-web-applicati
 https://www.freecodecamp.org/news/an-introduction-to-web-performance-and-the-critical-rendering-path-ce1fb5029494/
 https://developer.chrome.com/docs/devtools/performance/selector-stats
 
-<!-- TODO: write code  -->
-
 ![Critical Rendering Path Overview](images/slide1.png)
 
 ![Critical Rendering Path Overview](images/slide2.png)
@@ -18,6 +16,61 @@ https://developer.chrome.com/docs/devtools/performance/selector-stats
 ![Critical Rendering Path Overview](images/slide4.png)
 
 ![Critical Rendering Path Overview](images/slide5.png)
+
+![Critical Rendering Path Overview](images/slide6.png)
+
+![Critical Rendering Path Overview](images/slide7.png)
+
+## The Critical Rendering Path
+
+![Critical Rendering Path Overview](images/slide8.png)
+
+## Performance Rules to keep in mind
+
+![Critical Rendering Path Overview](images/slide9.png)
+
+## Hey! What about javascript?
+
+![Critical Rendering Path Overview](images/slide10.png)
+
+### Render-Blocking Behavior:
+
+- By default, JavaScript is render-blocking
+- When the browser encounters a `<script>` tag, it:
+  - Pauses HTML parsing
+  - Downloads the script
+  - Executes the script
+  - Resumes HTML parsing
+
+This script blocks the HTML parser: the browser stops building the page, fetches the script, executes it, then continues parsing.
+
+```html
+<script src="https://apis.google.com/js/plusone.js"></script>
+```
+
+**Async script**
+
+This script is asynchronous: the browser continues parsing the HTML while downloading the script in the background. When the script is ready, it executes immediately (even if HTML parsing isn’t finished).
+
+```html
+<script src="https://apis.google.com/js/plusone.js" async></script>
+```
+
+![Critical Rendering Path Overview](images/slide11.png)
+
+![Critical Rendering Path Overview](images/slide12.png)
+
+![Critical Rendering Path Overview](images/slide13.png)
+
+- This code queries and modifies the style of an element and writes directly to the document.
+- JavaScript can block or delay rendering by interacting with the CSSOM and DOM before they are fully constructed.
+- Best Practice:
+  - Avoid running JS that queries or modifies the DOM/CSSOM before they are ready.
+  - Use defer or async for scripts, and avoid document.write.
+
+## Putting it all together
+
+![Critical Rendering Path Overview](images/slide14.png)
 
 ### Lets try out a simple example - Branch: example-1-inline-critical-css
 
