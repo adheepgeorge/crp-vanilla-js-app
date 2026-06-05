@@ -22,6 +22,9 @@
   <title>Critical Rendering Path Demo</title>
   <!-- This large stylesheet will block rendering -->
   <link rel="stylesheet" href="styles.css">
+  <!-- Blocking scripts (no defer/async): these will block HTML parsing -->
+  <script src="large-script-1.js"></script>
+  <script src="large-script-2.js"></script>
 </head>
 <!-- "Above the fold" content refers to the portion of a webpage that is visible to users 
  without having to scroll down. The term comes from the newspaper industry, 
