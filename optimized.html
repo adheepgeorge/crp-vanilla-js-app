@@ -67,9 +67,16 @@
   <noscript>
     <link rel="stylesheet" href="styles.css">
   </noscript>
-  <!-- Non-blocking scripts for CRP comparison -->
-  <script src="large-script-1.js" defer></script>
-  <script src="large-script-2.js" async></script>
+  <!--
+    JS CRP (vs index.html):
+    - defer in head: fetch runs in parallel with parsing; execution after parse (no extra <link
+      rel="preload"> needed here—preload for scripts is only a <link>, and a nearby defer script
+      is already discovered early; use <link rel="preload" as="script"> when the script tag is
+      much later, e.g. end of body, so fetch starts sooner).
+    - large-script-bundle.js defers CPU with requestIdleCallback so the main thread can paint the
+      LCP candidate (hero) before the same loops run.
+  -->
+  <script src="large-script-bundle.js" defer></script>
 </head>
 
 <body>
